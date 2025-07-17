@@ -31,6 +31,11 @@
       border-radius: 5px;
       cursor: pointer;
     }
+
+    .active-link {
+      font-weight: bold;
+      color: #007bff;
+    }
   </style>
 </head>
 <body>
@@ -52,23 +57,30 @@
   <main>
     <section class="contact-form">
       <h2>Contact Details</h2>
-      <p><strong>📞 Phone:</strong> [Add your phone number here]</p>
-      <p><strong>📧 Email:</strong> [Add your email address here]</p>
+      <p><strong>📞 Phone:</strong> 7979936578</p>
+      <p><strong>📧 Email:</strong> sachindra1kumarpandey@gmail.com</p>
       <p><strong>🏢 Office:</strong> [Add your office address here]</p>
 
       <hr style="margin:2rem 0;">
 
       <h2>Send a Message</h2>
-      <form action="https://formsubmit.co/rishabhkumarpandey732@gmail.com" method="post">
+      <form id="contactForm">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" rows="5" placeholder="Your Message"></textarea>
         <button type="submit">Send Message</button>
       </form>
+
+      <div id="thankYouMsg" style="display:none; margin-top:20px; text-align:center;">
+        <h3>Thank you for submitting!</h3>
+        <button onclick="window.location.reload()">Go Back</button>
+      </div>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Advocate Sachindra Kumar Pandey. All Rights Reserved.</p>
   </footer>
 </body>
+<script src="js/script.js"></script>
 </html>
